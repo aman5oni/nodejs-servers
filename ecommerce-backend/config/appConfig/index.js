@@ -1,0 +1,30 @@
+import dotenv from "dotenv";
+import { env } from "process";
+
+dotenv.config();
+
+const PORT = env.PORT;
+const MONGO_URL = env.MONGO_URL;
+const JWT_PRIVATE_KEY = env.JWT_PRIVATE_KEY;
+const JWT_EXPIRES = env.JWT_EXPIRES;
+const COOKIE_EXPIRE = env.COOKIE_EXPIRE;
+const RESET_PASSWORD_EXPIRE = env.RESET_PASSWORD_EXPIRE;
+const SMTP_MAIL = env.SMTP_MAIL
+const SMTP_PASSWORD = env.SMTP_PASSWORD
+const SMTP_SERVICE = env.SMTP_SERVICE
+const SMTP_HOST = env.SMTP_HOST
+const SMTP_PORT = env.SMTP_PORT
+
+export {
+  PORT,
+  MONGO_URL,
+  JWT_PRIVATE_KEY,
+  JWT_EXPIRES,
+  COOKIE_EXPIRE,
+  RESET_PASSWORD_EXPIRE,
+  SMTP_MAIL,
+  SMTP_PASSWORD,
+  SMTP_SERVICE,
+  SMTP_HOST,
+  SMTP_PORT
+};
